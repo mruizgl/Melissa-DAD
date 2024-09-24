@@ -1,4 +1,3 @@
-// Importamos la clase Pokemon desde el archivo Pokemon.js
 import Pokemon from './Pokemon.js';
 
 // Creamos un array para los 151 pokemons que obtendremos desde la API
@@ -6,6 +5,7 @@ var pokemons = [];
 
 // Seleccionamos el elemento button del DOM usando querySelector 
 const button = document.querySelector("button");
+
 // Agregamos un event listener al botón para que se mantenga a la espera de hacer click en él
 // Cuando se recibe el click, se ejecuta la función flecha
 button.addEventListener("click", () => {
@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
 // Función asíncrona que va a realizar operaciones con promesas para realizar la llamada a la API
 const startPokedex = async () => {
     // Bucle for que itera desde 1 hasta 151, que son los primeros 151 Pokemon
-    for(var i = 1; i <= 151; i++) {
+    for(var i = 1; i <= 200; i++) {
         // Utilizamos fetch para hacer una solicitud a la API donde i representa el número de Pokemon
         await fetch("https://pokeapi.co/api/v2/pokemon/" + i + "/")
             .then(function(result) {
@@ -60,15 +60,18 @@ const showPokedex = async () => {
                 tipo2 = "";          
             aux++; 
         }
-        // Para cada Pokemon, se crea una tarjeta con imágenes (vista frontal y trasera), el nombre y los tipos
-        // Esta estructura HTML se añade dinámicamente al contenedor pokedex
+        // Aquí, antes de usar la variable weight, asegúrese de que se haya definido correctamente
+        var weight = pokemons[i].weight;
         pokedex.innerHTML +=    `<div class="card">
-                                    <img src="${pokemons[i].pkm_back}">
-                                    <img class="front" src="${pokemons[i].pkm_front}"><br>
-                                    ${pokemons[i].id}. ${pokemons[i].name}<br>
-                                    <div class="types">
-                                        ${tipo1} ${tipo2}
-                                    </div>
-                                </div>`
+                            <img src="${pokemons[i].pkm_back}">
+                            <img class="front" src="${pokemons[i].pkm_front}"><br>
+                            ${pokemons[i].id}. ${pokemons[i].name}<br>
+                            <div class="types">
+                                ${tipo1} ${tipo2}
+                            </div>
+                            <div class="weight">
+                                ${weight}
+                            </div>
+                        </div>`;
     }
 }

@@ -12,16 +12,18 @@
 }
 
 .c1 {
-    background-image: url("../assets/images/cover1.jpg");
+    background-image: url("/cover1.01da7a3c.jpg");
     background-size: cover;
 }
 
 .c2 {
-    background-image: url("../assets/images/cover2.jpg");
+    background-image: url("/cover2.4ee97fb8.jpg");
     background-size: cover;
 }
 
 .c3 {
-    background-image: url("../assets/images/cover3.jpg");
+    background-image: url("/cover3.e55ef185.jpg");
     background-size: cover;
 }
+
+/*# sourceMappingURL=/cs.0192795c.css.map */

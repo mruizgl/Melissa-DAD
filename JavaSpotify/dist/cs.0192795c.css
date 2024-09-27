@@ -6,12 +6,14 @@
 }
 
 .cover {
+    z-index: 1;
     width: 200px;
     height: 200px;
     background-color: gray;
 }
 
 .c1 {
+    
     background-image: url("/cover1.01da7a3c.jpg");
     background-size: cover;
 }
@@ -25,5 +27,38 @@
     background-image: url("/cover3.e55ef185.jpg");
     background-size: cover;
 }
+
+
+.vynil {
+    position: relative;
+    background: lightblue;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    z-index: 0;
+    transition: right 0.;
+}
+
+.detail {
+    width: 50px;
+    height: 50px;
+    background: #facc2e;
+    border-radius: 50%;
+    border: solid #ffbf00 1rem;
+
+}
+
+.detail .hole {
+    content: '';
+    background: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.open + .vinyl {
+    transform: translateX(-50);
+}
+
 
 /*# sourceMappingURL=/cs.0192795c.css.map */

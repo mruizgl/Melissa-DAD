@@ -1,46 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <title>Canarias - Portada</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="author" content="Melissa Ruiz">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark">
-        <a class="navbar-brand" href="index.html" style="color: white">
-          <img src="img/img/pdc-logo.png" height="30px" width="20px" style="margin-left: 30px;"> 
-          <p style="display: inline-block; font-size: medium; margin-left: 5px;">Canarias</p>   
-        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white">Portada <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white">Deportes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white">Rutas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white">Contáctanos</a>
-            </li>
-            
-          </ul>
-          
-        </div>
-        <form class="form-inline" style="margin-right: 50px;;">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Search</button>
-          </form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/img/pdc-logo.png" alt="Logo Canarias" style="width: 20px; height: 30px; margin-left: 8px;">
+        Canarias
         
-      </nav>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#">Portada</a></li>
+            <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+            <li class="nav-item"><a class="nav-link" href="rutas.html">Rutas</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0 d-none d-lg-flex">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-3">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="#">Población</a>
+                <a class="nav-link" href="#">Menú</a>
+                <a class="nav-link" href="#">Precios</a>
+            </nav>
+        </div>
+        <div class="col-lg-9">
+            <h3>Población por provincias</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Santa Cruz de Tenerife</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Tenerife<span class="badge badge-primary badge-pill">966,354</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">La Gomera<span class="badge badge-primary badge-pill">22,426</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">El Hierro<span class="badge badge-primary badge-pill">11,338</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">La Palma<span class="badge badge-primary badge-pill">85,840</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Las Palmas</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Gran Canaria<span class="badge badge-info badge-pill">870,595</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Lanzarote<span class="badge badge-info badge-pill">154,530</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Fuerteventura<span class="badge badge-info badge-pill">126,227</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">La Graciosa<span class="badge badge-info badge-pill">734</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Gastronomía</h3>
+            <h5 class="menu-header">Menú</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>Primeros</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Ensalada Tropical</li>
+                        <li class="list-group-item">Escaldón</li>
+                        <li class="list-group-item">Queso Asado</li>
+                        <li class="list-group-item">Croquetas</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Segundos</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary">Carne Fiesta</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary">Pollo Asado</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary">Garbanzas</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary">Potaje Berros</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="postres-header">Postres</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning">Polvito Uruguayo</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning">Príncipe Alberto</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning">Frangoyo</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning">Quesillo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Precios</h3>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th><th>Primeros</th><th>Ingredientes</th><th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Ensalada tropical</td><td>Lechuga, mango y papaya</td><td>7€</td></tr>
+                    <tr><td>2</td><td>Escaldon</td><td>Gofio</td><td>4€</td></tr>
+                    <tr><td>3</td><td>Queso Asado</td><td>Leche de Cabra</td><td>5€</td></tr>
+                    <tr><td>4</td><td>Croquetas</td><td>Pollo, cherne, queso azul</td><td>6€</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
